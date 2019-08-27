@@ -1,0 +1,19 @@
+AllCops:
+  Include:
+    - Rakefile
+    - config.ru
+  Exclude:
+    - 'vendor/**/*'
+    - 'db/**/*'
+    - 'db/migrate/**'
+    - 'config/**/*'
+    - 'config/environnements/**'
+    - 'bin/**/*'
+    - 'tmp/*'
+    - 'Guardfile'
+    - 'node_modules/**/*' #webpacker & rails 5.1
+require: rubocop-rails
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Documentation:
+  Enabled: false

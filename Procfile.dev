@@ -1,0 +1,2 @@
+web: cd client && PORT=8080 yarn serve
+api: bundle exec rails s -p 3000
