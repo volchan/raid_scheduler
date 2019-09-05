@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import VueApollo from 'vue-apollo';
-import SuiVue from 'semantic-ui-vue';
+
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+import './plugins';
 
 import App from './App.vue';
 import router from './router';
@@ -10,7 +13,6 @@ import apolloClient from './apolloClient';
 Vue.config.productionTip = false;
 
 Vue.use(VueApollo);
-Vue.use(SuiVue);
 
 const apolloProvider = new VueApollo({
   defaultClient: apolloClient,
