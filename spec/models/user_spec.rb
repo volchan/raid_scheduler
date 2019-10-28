@@ -11,11 +11,9 @@
 #  email                  :string           default(""), not null
 #  encrypted_password     :string           default(""), not null
 #  failed_attempts        :integer          default(0), not null
-#  firstname              :string           default(""), not null
 #  jti                    :string           not null
 #  last_sign_in_at        :datetime
 #  last_sign_in_ip        :inet
-#  lastname               :string           default(""), not null
 #  locked_at              :datetime
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
@@ -23,6 +21,7 @@
 #  sign_in_count          :integer          default(0), not null
 #  unconfirmed_email      :string
 #  unlock_token           :string
+#  username               :string           default(""), not null
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #
