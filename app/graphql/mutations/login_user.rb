@@ -4,13 +4,15 @@ module Mutations
 
     null true
 
-    argument :email, String, required: true
+    argument :login, String, required: true
     argument :password, String, required: true
 
     field :user, Types::UserType, null: true
 
-    def resolve(email: nil, password: nil)
-      user = User.find_for_authentication(email: email)
+    def resolve(login: nil, password: nil)
+      user = User.find_for_authentication(email: login)
+      user ||= User.find_for_authentication(username: login)
+
       return nil unless user
 
       is_valid_for_auth = user.valid_for_authentication? do
