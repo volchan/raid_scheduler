@@ -8,13 +8,13 @@ gem 'devise'
 gem 'devise-i18n'
 gem 'devise-jwt'
 gem 'graphql'
-gem 'pg', '>= 0.18', '< 2.0'
+gem 'pg'
 gem 'pry-rails'
-gem 'puma', '~> 3.11'
+gem 'puma'
 gem 'rack-cors'
-gem 'rails', '~> 6.0.0'
+gem 'rails'
 
-gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootsnap', require: false
 
 group :development, :test do
   gem 'awesome_print'
@@ -36,14 +36,14 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'foreman'
-  gem "graphiql-rails"
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'graphiql-rails'
+  gem 'listen'
   gem 'pry-byebug'
   gem 'rubocop', require: false
   gem 'rubocop-performance'
   gem 'rubocop-rails'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen'
 end
 
 gem 'tzinfo-data', platforms: %I[mingw mswin x64_mingw jruby]
