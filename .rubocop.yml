@@ -1,3 +1,5 @@
+require: rubocop-rails # rails cops extracted to separate gem in last version
+
 AllCops:
   Include:
     - Rakefile
@@ -12,8 +14,27 @@ AllCops:
     - 'tmp/*'
     - 'Guardfile'
     - 'node_modules/**/*' #webpacker & rails 5.1
-require: rubocop-rails
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength: 
+  Max: 20
+
+Metrics/ClassLength:
+  Max: 200
+
+Style/Documentation:
+  Enabled: false
+
 Style/FrozenStringLiteralComment:
   Enabled: false
-Documentation:
-  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
